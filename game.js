@@ -1,5 +1,5 @@
 // A radius is measured from the middle of the target to one edge.
-const PERFECT_RADIUS = 0.04;
+const PERFECT_RADIUS = 0.06;
 const CATCH_RADIUS = 0.15;
 
 // Each wave has a target position and a one-way travel time in milliseconds.

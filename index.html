@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#182d37">
+  <title>Swell Window</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="ocean.js" defer></script>
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="brand"><b aria-hidden="true">≋</b> Creeves Arcade</div>
+      <span class="edition">Surf timing game</span>
+    </header>
+    <section class="water" aria-label="Surf break">
+      <canvas id="ocean" aria-hidden="true"></canvas>
+      <h1>Swell <em>Window</em></h1>
+    </section>
+    <section class="deck" aria-label="Game controls">
+      <div class="stats">
+        <div>Wave <strong id="wave">1 / 5</strong></div>
+        <div>Score <strong id="score">0</strong></div>
+        <div>Best <strong id="best">—</strong></div>
+      </div>
+      <p id="status" aria-live="polite" aria-atomic="true">Catch the marker in the striped zone. The bright center earns 3 points.</p>
+      <div id="track" aria-hidden="true">
+        <div id="zone"></div><div id="perfect"></div><div id="marker"></div>
+      </div>
+      <div class="track-labels" aria-hidden="true"><span>Early</span><span>Late</span></div>
+      <button type="button" id="action">Start set</button>
+    </section>
+    <footer><span>Five waves per set</span><span>Tap or press <kbd>Space</kbd></span></footer>
+  </main>
+</body>
+</html>
